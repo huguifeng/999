@@ -1,0 +1,26 @@
+language: php
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+
+# S: Build Lifecycle
+install:
+  - composer install --no-interaction --prefer-source
+
+
+#before_script:
+ # - npm install -g gulp
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "huguifeng"
+  - git config user.email "1451249397@qq.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+# E: Build LifeCycle
+env:
+ global:
+   - GH_REF: git@github.com:huguifeng/999.git
