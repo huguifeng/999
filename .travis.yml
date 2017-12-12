@@ -5,8 +5,7 @@ php:
   - 5.6
 
 # S: Build Lifecycle
-install:
-  - composer install --no-interaction --prefer-source
+
 
 
 #before_script:
