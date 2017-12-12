@@ -6,10 +6,11 @@ php:
 
 # S: Build Lifecycle
 
+script: phpunit -v
 
-
-#before_script:
- # - npm install -g gulp
+before_script:
+  - composer install
+  - cd tests
 
 after_script:
   - cd ./public
