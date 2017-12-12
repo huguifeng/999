@@ -9,7 +9,7 @@ php:
 script: phpunit -v
 
 before_script:
-  - composer install
+  
   - cd tests
 
 after_script:
