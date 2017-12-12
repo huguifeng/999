@@ -1,0 +1,8 @@
+<phpunit bootstrap="" colors="true">
+    <testsuites>
+        <testsuite name="EvaThumber Test Suite">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+    
+</phpunit>
