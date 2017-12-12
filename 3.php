@@ -1,3 +1,3 @@
 <?php
 
-echo "hah0000";
+echo "hah0000"
