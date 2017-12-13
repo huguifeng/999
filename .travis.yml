@@ -8,9 +8,6 @@ php:
 
 script: phpunit tests/BookTest.php
 
-before_script:
-  
-  - cd tests
 env:
  global:
    - GH_REF: git@github.com:huguifeng/999.git
