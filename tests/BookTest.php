@@ -10,6 +10,6 @@ class BookTest extends TestCase
     {
     	$book = new Book;
     	$book->pushBook(1,"《三体》");
-        $this->assertEquals('555',$book->getBook(1) );
+        $this->assertEquals("《三体》",$book->getBook(1) );
     }
 }
