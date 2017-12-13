@@ -1,11 +1,13 @@
 language: php
 php:
   - 5.4
+  - 5.5
   - 5.6
 
 # S: Build Lifecycle
 
-script: phpunit tests/BookTest.php
+script: phpunit tests
+
 
 env:
  global:
